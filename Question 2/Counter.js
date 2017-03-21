@@ -9,7 +9,16 @@ var counter = 0;
 var dom;
 
 function getElementBtnIncrement(){
-    counter = domcument.getElementById()
+    counter = document.getElementById("incrementButton");
+
+    document.addEventListener("click", increment, false);
 }
+
+function increment(){
+    counter++;
+    dom = document.getElementById("output").innerHTML = counter;
+}
+
+window.addEventListener("load", getElementBtnIncrement, false);
 
 
